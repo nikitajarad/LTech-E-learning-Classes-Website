@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Enrolled courses </title>
+  <link rel="stylesheet" href="enrolled.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Subject', 'Hours per Day'],
+        ['Java', 11],
+        ['C++', 7],
+        ['C', 11],
+      ]);
+
+      var options = {
+        title: 'Courses enrolled'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+  <script type="text/javascript">
+    google.charts.load('current', { packages: ['corechart', 'bar'] });
+    google.charts.setOnLoadCallback(drawBasic);
+
+    function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day');
+      data.addColumn('number', 'Study Hours');
+
+      data.addRows([
+        [{ v: [8, 0, 0], f: '8:00' }, 1],
+        [{ v: [9, 0, 0], f: '9:00' }, 2],
+        [{ v: [10, 0, 0], f: '10:00' }, 3],
+        [{ v: [11, 0, 0], f: '11:00' }, 4],
+        [{ v: [12, 0, 0], f: '12:00' }, 5],
+        [{ v: [13, 0, 0], f: '1:00' }, 6],
+        [{ v: [14, 0, 0], f: '2:00' }, 7],
+        [{ v: [15, 0, 0], f: '3:00' }, 8],
+        [{ v: [16, 0, 0], f: '4:00' }, 9],
+        [{ v: [17, 0, 0], f: '5:00' }, 10],
+        [{ v: [17, 0, 0], f: '6:00' }, 11],
+        [{ v: [17, 0, 0], f: '7:00' }, 12],
+      ]);
+
+      var options = {
+        title: 'Your Study Time',
+        hAxis: {
+          title: 'Time',
+          format: 'h:mm a',
+          viewWindow: {
+            min: [7, 30, 0],
+            max: [17, 30, 0]
+          }
+        },
+        vAxis: {
+          title: 'Hours Rating (scale of 1-10)'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="menu-icon">
+      <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">
+      LTech Classes
+    </div>
+    <div class="nav-items">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a class="active" href="Courses.html">Courses</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="active" href="LoginRegister.html">Login</a></li>
+    </div>
+    <div class="cancel-icon">
+      <span class="fas fa-times"></span>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="col">
+      <div id="piechart" class="pie"></div>
+    </div>
+    <div class="col">
+      <div id="chart_div" class="chart"></div>
+    </div>
+  </div><br>
+
+  <section class="course">
+    <div class="box">
+      <img src="course-5.svg" alt="">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <h3>Java language</h3>
+      <p>Java is an object-oriented programming language that produces software for multiple platforms. When a
+        programmer writes a Java application, the compiled code (known as bytecode) runs on most OS,including
+        Windows,Linux and Mac OS.</p>
+      <a href="JavaCourse.html" class="btn">Continue</a>
+      <div class="icons">
+        <p> <i class="far fa-clock"></i> 2 hours </p>
+        <p> <i class="far fa-calendar"></i> 6 months </p>
+        <p> <i class="fas fa-book"></i> 12 modules </p>
+      </div>
+    </div>
+    <div class="box">
+      <img src="course-3.svg" alt="">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <h3>C++ language</h3>
+      <p>C++ is an object-oriented programming (OOP) language that is viewed by many as the best language for creating
+        large-scale applications. C++ is a superset of the C language. </p>
+      <a href="CppCourse.html" class="btn">Continue</a>
+      <div class="icons">
+        <p> <i class="far fa-clock"></i> 2 hours </p>
+        <p> <i class="far fa-calendar"></i> 6 months </p>
+        <p> <i class="fas fa-book"></i> 12 modules </p>
+      </div>
+    </div>
+    <div class="box">
+      <img src="course-2.svg" alt="">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <h3>C language</h3>
+      <p>C language is one of the most popular programming languages which are able to make low level applications like
+        drivers, OS, firmware etc along with the high level applications like desktop .</p>
+      <a href="CCourse.html" class="btn">Continue</a>
+      <div class="icons">
+        <p> <i class="far fa-clock"></i> 2 hours </p>
+        <p> <i class="far fa-calendar"></i> 6 months </p>
+        <p> <i class="fas fa-book"></i> 12 modules </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <div class="logo1">
+        LTech Classes
+      </div>
+
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+        |
+        <a href="About.html">About Us</a>
+        |
+        <a href="Courses.html">Courses</a>
+        |
+        <a href="contact.html">Contact</a>
+      </p>
+
+      <p class="footer-company-name">© 2021 LTech Learning Solutions Pvt. Ltd.</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>309 - Rupa Solitaire,
+            Bldg. No. A - 1, Sector - 1</span>
+          Mahape, Navi Mumbai - 400710</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 22-27782183</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="index.html">support@ltechclasses.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the classes</span>
+        We offer training and skill building courses across Technology.
+      </p>
+      <div class="footer-icons">
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/signup"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+				</div>
+    </div>
+  </footer>
+  <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    const spans = document.querySelectorAll('.word span');
+
+    spans.forEach((span, idx) => {
+      span.addEventListener('click', (e) => {
+        e.target.classList.add('active');
+      });
+      span.addEventListener('animationend', (e) => {
+        e.target.classList.remove('active');
+      });
+
+      // Initial animation
+      setTimeout(() => {
+        span.classList.add('active');
+      }, 750 * (idx + 1))
+    });
+    menuBtn.onclick = () => {
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = () => {
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = () => {
+      form.classList.add("active");
+      cancelBtn.classList.add("show");
+    }
+
+  </script>
+</body>
+
+</html>

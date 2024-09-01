@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coursestyle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>C programming</title>
+</head>
+
+<body>
+    <!--Navigation Bar starts-->
+    <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+        </div>
+        <div class="logo">
+            LTech Classes
+        </div>
+        <div class="nav-items">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a class="active" href="Courses.html">Courses</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="LoginRegister.html">Login</a></li>
+        </div>
+        <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+        </div>
+    </nav>
+    <!--Navigation Bar endss-->
+    <!--Video gallery starts-->
+    <h3 class="heading">C Programming</h3>
+
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/kb0MG6oUCTw" height="500" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3 class="title">01.Programming cycle</h3>
+            </div>
+        </div>
+        <div class="video-list">
+            <div class="vid active">
+                <iframe src="https://www.youtube.com/embed/kb0MG6oUCTw" height="500" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3 class="title">01Programming cycle</h3>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/VSU7EaHMzl8" height="500" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3 class="title">02.Tracing a simple program</h3>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/p5MRUoEv5bw" height="500" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3 class="title">03.Variables</h3>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/wiY0O_tHyrI" height="500" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3 class="title">04.Operators</h3>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/Io-kyjHI3vM" height="500" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3 class="title">05.While loop</h3>
+            </div>
+            <div class="vid">
+                <iframe src="https://www.youtube.com/embed/bclqfVCDmqU" height="500" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h3 class="title">06.For loop</h3>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let listVideo = document.querySelectorAll('.video-list .vid');
+        let mainVideo = document.querySelector('.main-video iframe');
+        let title = document.querySelector('.main-video .title');
+
+        listVideo.forEach(iframe => {
+            iframe.onclick = () => {
+                listVideo.forEach(vid => vid.classList.remove('active'));
+                iframe.classList.add('active');
+                if (iframe.classList.contains('active')) {
+                    let src = iframe.children[0].getAttribute('src');
+                    mainVideo.src = src;
+                    let text = iframe.children[1].innerHTML;
+                    title.innerHTML = text;
+                };
+            };
+        });
+    </script>
+    <!--Video Gallery ends-->
+    <!--Footer Starts-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <div class="logo1">
+                LTech Classes
+            </div>
+
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                |
+                <a href="About.html">About Us</a>
+                |
+                <a href="Courses.html">Courses</a>
+                |
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p class="footer-company-name">© 2021 LTech Learning Solutions Pvt. Ltd.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>309 - Rupa Solitaire,
+                        Bldg. No. A - 1, Sector - 1</span>
+                    Mahape, Navi Mumbai - 400710</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 22-27782183</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="index.html">support@ltechclasses.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the classes</span>
+                We offer training and skill building courses across Technology.
+               
+            </p>
+           <div class="footer-icons">
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/signup"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+				</div>
+        </div>
+    </footer>
+    <!--Footer ends-->
+    <!--Script for navigation bar:-->
+    <script>
+        const menuBtn = document.querySelector(".menu-icon span");
+        const cancelBtn = document.querySelector(".cancel-icon");
+        const items = document.querySelector(".nav-items");
+        const form = document.querySelector("form");
+      
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            menuBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+        }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+            cancelBtn.style.color = "#ff3d00";
+        }
+        searchBtn.onclick = () => {
+            form.classList.add("active");
+            cancelBtn.classList.add("show");
+        }
+    </script>
+
+</body>
+
+</html>

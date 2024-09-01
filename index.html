@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>LTech Classes</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+	   <script type="text/javascript">
+    		(function(d, m){
+        		var kommunicateSettings = 
+            		{"appId":"3412f8120f355708fe739ba8a6cd58db4","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        		var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        		s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        		var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        		window.kommunicate = m; m._globals = kommunicateSettings;
+    		})(document, window.kommunicate || {});
+		/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+	</script>
+      <nav>
+        <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            LTech Classes
+         </div>
+         <div class="nav-items">
+            <li><a class="active" href="index.html">Home</a></li>
+             <li><a class="active" href="Courses.html">Courses</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="LoginRegister.html">Login</a></li>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+      </nav>
+      <div id="container">
+        <div class="image-container">
+            <img src="home.png" alt="A image" />
+            <div class="top-left">
+            <div class="word">
+            Learn From <span>A</span><span>N</span><span>Y</span><span>W</span><span>H</span><span>E</span><span>R</span><span>E</span>
+            </div></div>
+            <div class="sub-left">The important thing is not to stop questioning; <br>curiosity has its own reason for existing.</div>
+            <div class="subb-left"><a href="LoginRegister.html"><button class="button button1">Get Started</button></a>
+            <a href="Courses.html"><button class="button button2">View Courses</button></div></a>
+         </div>
+    </div>
+    <br><br>
+     <div class="container1">
+        <h1>Top Mentors</h1>
+        <hr>
+        <h2>Here are some top rated mentors ranked by students</h2>
+        <div class="contact-items">
+            <div class="nikita">
+                <h3>Nikita Jarad</h3>
+                <img src="nikita.png" />
+                <p>Nikita has completed Masters in Java and got 5/5 stars.</p>
+                <a href="Java.html"><button id="cust-care"> Java</button></a>
+            </div>
+            <div class="avh">
+                <h3>Apoorva Holkar</h3>
+                <img src="nikita.png" />
+                <p>Apoorva has completed Masters in Python and got 5/5 stars.</p>
+               <a href="Python.html"> <button id="write">Python</button></a>
+            </div>
+            <div class="shru">
+                <h3> Shruti Ghodake</h3>
+                <img src="nikita.png" />
+                <p>Shruti has completed masters in CPP and got 5/5 stars.</p>
+                <a href="Cpp.html"> <button id="write">CPP</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+          
+				<div class="logo1">
+                    LTech Classes
+                </div>
+
+				<p class="footer-links">
+					<a href="index.html">Home</a>
+					|
+					<a href="About.html">About Us</a>
+					|
+					<a href="Courses.html">Courses</a>
+					|
+					<a href="contact.html">Contact</a>
+				</p>
+
+				<p class="footer-company-name">© 2021 LTech Learning Solutions Pvt. Ltd.</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="fa fa-map-marker"></i>
+					  <p><span>309 - Rupa Solitaire,
+						 Bldg. No. A - 1, Sector - 1</span>
+						Mahape, Navi Mumbai - 400710</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+91 22-27782183</p>
+				</div>
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="index.html">support@ltechclasses.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					<span>About the classes</span>
+					We offer training and skill building courses across Technology.</p>
+				<div class="footer-icons">
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/signup"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+
+    <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         const spans = document.querySelectorAll('.word span');
+
+        spans.forEach((span, idx) => {
+        span.addEventListener('click', (e) => {
+            e.target.classList.add('active');
+        });
+        span.addEventListener('animationend', (e) => {
+            e.target.classList.remove('active');
+        });
+  
+        // Initial animation
+        setTimeout(() => {
+         span.classList.add('active');
+         }, 750 * (idx+1))
+        });
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#ff3d00";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           cancelBtn.classList.add("show");
+         }
+
+      </script>
+   </body>
+</html>
